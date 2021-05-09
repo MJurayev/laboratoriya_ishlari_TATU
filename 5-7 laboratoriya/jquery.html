@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-6-7 Calculator</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input  disabled   id="result" type="text">
+            <input autocomplete="off" value="0" id="input" type="number">
+            <div class="keys">
+                <div onclick="typeFunc(1)" class="cell number">1</div>
+                <div  onclick="typeFunc(2)" class="cell number">2</div>
+                <div  onclick="typeFunc(3)" class="cell number">3</div>
+
+                <div onclick="clearInput()" class="cell">C</div>
+
+                <div  onclick="typeFunc(4)" class="cell number">4</div>
+                <div  onclick="typeFunc(5)" class="cell number">5</div>
+                <div  onclick="typeFunc(6)" class="cell number">6</div>
+
+                <div onclick="jsCalc()" class="cell">!</div>
+
+                <div  onclick="typeFunc(7)" class="cell number">7</div>
+                <div  onclick="typeFunc(8)" class="cell number">8</div>
+                <div  onclick="typeFunc(9)" class="cell number">9</div>
+                <div onclick="handleEqual()" class="cell">=</div>
+                
+                <div class="cell"></div>
+                <div  onclick="typeFunc(0)" class="cell number">0</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/jquery-3.6.0.slim.min.js"></script>
+<script src="./assets/js/jquery.js"></script>
+</html>

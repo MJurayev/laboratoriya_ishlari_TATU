@@ -1,0 +1,23 @@
+.video{
+    display: flex;
+    flex-direction: column;
+    .title{
+        padding: 10px 0;
+    }
+    video{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    video::-internal-media-controls-download-button {
+        display:none;
+    }
+    
+    video::-webkit-media-controls-enclosure {
+        overflow:hidden;
+    }
+    
+    video::-webkit-media-controls-panel {
+        width: calc(100% + 30px); /* Adjust as needed */
+    }
+}
